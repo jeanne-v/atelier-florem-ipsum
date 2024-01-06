@@ -11,6 +11,10 @@ body {
 }
 
 
+svg {
+    display: block;
+}
+
 
 /* HEADER */
 
@@ -40,8 +44,4 @@ body {
     border: none;
     padding: 0;
     cursor: pointer;
-}
-
-.header__hamburger-menu svg {
-    display: block;
 }
