@@ -5,4 +5,43 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
+    background-color: #FCF7F8;
+    color: #382D2E;
+    line-height: 1.5;
+}
+
+
+
+/* HEADER */
+
+.header {
+    background-color: #FFE8E8;
+    box-shadow: 0 4px 5px rgba(153, 100, 100, 0.25);
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+
+.header__logo {
+    height: 32px;
+}
+
+.header__logo path {
+    fill: #CE2539;
+}
+
+
+.header__hamburger-menu {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.header__hamburger-menu svg {
+    display: block;
 }
