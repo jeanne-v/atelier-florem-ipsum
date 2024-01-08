@@ -16,11 +16,6 @@ body {
 }
 
 
-svg {
-    display: block;
-}
-
-
 @font-face {
     font-family: "Soligant";
     src: url("assets/Soligant.ttf");
@@ -29,9 +24,21 @@ svg {
 
 /* GEN */
 
-.accent-font, h1, h2 {
+.accent-font, h1, h2, h3 {
     font-family: "Soligant";
+    font-weight: normal;
 }
+
+h1, h2, h3 {
+    line-height: 1;
+}
+
+svg {
+    display: block;
+}
+
+
+
 
 
 /* HEADER */
@@ -61,6 +68,9 @@ svg {
     padding: 0;
     cursor: pointer;
 }
+
+
+
 
 /* FOOTER */
 
@@ -113,20 +123,39 @@ svg {
 }
 
 
-/* SECTIONS */
+
+
+/* HOMEPAGE BUTTON LINKS */
+
+.home-page__button-link {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1.5;
+    padding: 1em 1.5em;  /* ? */
+}
+
+.home-page__button-link--ghost-button {
+    margin-top: 24px;
+    color: #382D2E;
+    border: 1px solid #382D2E;
+}
+
+
+
+/*SECTIONS */
 
 main {
     margin-bottom: 112px;
 }
 
 
-.main--without-background-sections {
+.secondary-page__main {
     margin-left: 24px;
     margin-right: 24px;
 }
 
 
-.first-heading {
+.secondary-page__first-heading {
     font-size: 2.5rem; /* 40px */
     line-height: 1;
     margin: 48px 0 0;
@@ -134,6 +163,99 @@ main {
 }
 
 
+
+/* HOMEPAGE SECTIONS  */
+
+.home-page__section h2 {
+    font-size: 2rem; /* 32px */
+    text-align: center;
+    margin-top: 0;
+}
+
+.home-page__section:not(.home-page__section--pre-footer) h2 {
+    margin-bottom: 16px;
+}
+
+
+.home-page__section--without-background {
+    padding: 56px 24px;
+}
+
+.home-page__section--without-background p {
+    margin: 0;
+}
+
+.home-page__section--without-background p:last-of-type {
+    margin: 8px 0 32px;
+}
+
+.home-page__section--pink-background {
+    padding: 48px 24px;
+    background-color: #FFE8E8;
+    color: #CE2539;
+}
+
+.home-page__section--pink-background p {
+    margin: 0;
+    text-align: center;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.5rem; /* 24px */
+}
+
+.home-page__section--flower-background {
+    padding: 48px 24px 88px;
+}
+
+.home-page__section--flower-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page__section--flower-background p {
+    margin: 0;
+    text-align: center;
+}
+
+.home-page__section--pre-footer {
+    margin-top: 56px;
+    text-align: center;
+}
+
+.home-page__section--pre-footer h2 {
+    margin: 0 24px 40px;
+}
+
+.pre-footer__brand-values-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.pre-footer__brand-values-container p {
+    margin: 0;
+}
+
+.pre-footer__brand-values-container h3 {
+    margin: 16px 0 8px;
+    font-size: 1.5rem; /* 24px */
+}
+
+.pre-footer__brand-values-container img {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* HOMEPAGE BRAND VALUES SECTION */
+
+.brand-values-container {
+    width: 70vw;
+}
 
 
 /* BOUQUET CARD */
