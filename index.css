@@ -10,9 +10,27 @@ body {
     line-height: 1.5;
 }
 
+/* to remove !!! */
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 svg {
     display: block;
+}
+
+
+@font-face {
+    font-family: "Soligant";
+    src: url("assets/Soligant.ttf");
+}
+
+
+/* GEN */
+
+.accent-font, h1, h2 {
+    font-family: "Soligant";
 }
 
 
@@ -93,3 +111,54 @@ svg {
 .footer__bottom a {
     color: #382D2E;
 }
+
+
+/* SECTIONS */
+
+main {
+    margin-bottom: 112px;
+}
+
+
+.main--without-background-sections {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+
+.first-heading {
+    font-size: 2.5rem; /* 40px */
+    line-height: 1;
+    margin: 48px 0 0;
+    text-align: center;
+}
+
+
+
+
+/* BOUQUET CARD */
+
+.bouquet-cards-container {
+    margin-top: 32px;
+    display: grid;
+    row-gap: 32px;
+}
+
+.bouquet-card {
+    display: block;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #382D2E;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.bouquet-card__img-container {
+    background-image: url("assets/istockphoto-1422593766-1024x1024.jpg");
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1.3;
+}
+
