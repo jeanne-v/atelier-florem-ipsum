@@ -3,6 +3,9 @@ import cardsData from "./data.js";
 if(document.body.dataset.page === "bouquets-page"){
     renderBouquets();
 }
+else if(document.body.dataset.page ==="homepage"){
+    document.addEventListener("scroll", handleHomepageHeader);
+}
 
 function renderBouquets(){
     const bouquetsHTML = cardsData.map(card => {
@@ -22,4 +25,13 @@ document.getElementById("menu-close-btn").addEventListener("click", handleMobile
 function handleMobileMenuOverlay(){
     document.getElementById("mobile-menu-overlay").classList.toggle("open");
     document.body.classList.toggle("open");
+}
+
+function handleHomepageHeader(){
+    if(window.scrollY >= 40){
+        document.getElementById("header").classList.remove("header--transparent");
+    }
+    else if(window.scrollY < 40){
+        document.getElementById("header").classList.add("header--transparent");
+    }
 }
