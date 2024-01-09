@@ -278,8 +278,8 @@ main {
 }
 
 .bouquet-card__img-container {
-    background-image: url("assets/istockphoto-1422593766-1024x1024.jpg");
     background-size: cover;
+    background-position: center;
     width: 100%;
     aspect-ratio: 1.3;
 }
