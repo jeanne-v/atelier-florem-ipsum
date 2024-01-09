@@ -15,3 +15,11 @@ function renderBouquets(){
 
     document.getElementById("bouquet-cards-container").innerHTML = bouquetsHTML;
 }
+
+document.getElementById("hamburger-btn").addEventListener("click", handleMobileMenuOverlay);
+document.getElementById("menu-close-btn").addEventListener("click", handleMobileMenuOverlay);
+
+function handleMobileMenuOverlay(){
+    document.getElementById("mobile-menu-overlay").classList.toggle("open");
+    document.body.classList.toggle("open");
+}

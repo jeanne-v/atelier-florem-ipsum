@@ -190,7 +190,7 @@
             </a>
 
 
-            <button class="header__hamburger-menu">
+            <button class="header__hamburger-menu" id="hamburger-btn">
                 <svg width="36" height="24" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="36" y2="0.5" stroke="#382D2E"/>
                     <line y1="24.5" x2="36" y2="24.5" stroke="#382D2E"/>
@@ -198,6 +198,18 @@
                 </svg>
             </button>
         </header>
+
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <button class="mobile-menu-overlay__x-icon" id="menu-close-btn"><img src="assets/x.svg"></button>
+
+            <ul>
+                <li class="accent-font mobile-menu-overlay__item"><a href="index.html">Accueil</a></li>
+
+                <li class="accent-font mobile-menu-overlay__item mobile-menu-overlay__item--current"><a href="nos-realisations.html">Nos réalisations</a></li>
+
+                <li class="accent-font mobile-menu-overlay__item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
 
         <main class="secondary-page__main">
             <h1 class="secondary-page__first-heading">Nos réalisations</h1>
