@@ -207,6 +207,16 @@ body.open {
   color: #ce2539;
 }
 
+.home-page__button-link--pink:hover {
+  background-color: #ffffff;
+}
+
+.home-page__button-link--ghost-button:hover {
+  background-color: #ffe8e8;
+  border-color: #ffe8e8;
+  color: #382d2e;
+}
+
 /* HOMEPAGE HERO IMG SECTION */
 
 .hero-img-section {
@@ -291,18 +301,20 @@ main {
 
 .home-page__section--flower-background {
   padding: 48px 24px 88px;
-}
-
-.home-page__section--flower-background {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(assets/AdobeStock_484420661_Preview.png);
+  background-size: cover;
+  background-position: 50% 85%;
 }
 
 .home-page__section--flower-background p {
   margin: 0;
   text-align: center;
 }
+
+/* HOMEPAGE BRAND VALUES SECTION */
 
 .home-page__section--pre-footer {
   margin-top: 56px;
@@ -336,10 +348,17 @@ main {
   margin: 0 auto;
 }
 
-/* HOMEPAGE BRAND VALUES SECTION */
-
 .brand-values-container {
   width: 70vw;
+}
+
+/* HOMEPAGE FLOWER VASE IMG */
+
+.homepage__flower-vase-img-cointainer {
+  background-image: url(assets/pexels-daria-shevtsova-1070860.png);
+  background-position: bottom center;
+  background-size: cover;
+  height: 184px;
 }
 
 /* BOUQUET CARD */
