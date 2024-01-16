@@ -385,7 +385,7 @@ main {
   background-position: center;
   width: 100%;
   aspect-ratio: 1.3;
-  transition: background-size 0.5s ease-out;
+  transition: background-size 0.25s ease-out;
 }
 
 .bouquet-card:hover .bouquet-card__img-container {
