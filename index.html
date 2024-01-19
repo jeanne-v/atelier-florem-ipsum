@@ -329,8 +329,12 @@
     </header>
 
     <div class="mobile-menu-overlay" id="mobile-menu-overlay">
-      <button class="mobile-menu-overlay__x-icon" id="menu-close-btn">
-        <img src="assets/x.svg" />
+      <button class="mobile-menu-overlay__close-btn" id="menu-close-btn">
+        <img
+          class="mobile-menu-overlay__close-icon"
+          src="assets/x.svg"
+          alt="icone fermeture menu"
+        />
       </button>
 
       <ul class="mobile-menu-overlay__list">
@@ -356,28 +360,24 @@
 
     <main>
       <section class="hero-img-section">
-        <div class="section__content">
-          <h1
-            class="hero-img-section__text hero-img-section__text--first-heading"
-          >
-            Atelier Florem Ipsum
-          </h1>
+        <div class="hero-img-section__content">
+          <h1 class="hero-img-section__first-heading">Atelier Florem Ipsum</h1>
 
-          <p class="hero-img-section__text hero-img-section__text--sub-text">
+          <p class="hero-img-section__sub-heading">
             Création de bouquets artisanaux
           </p>
 
-          <a
-            href="#"
-            class="home-page__button-link home-page__button-link--pink"
+          <a href="#" class="button-link button-link--pink"
             >Découvrir nos réalisations
           </a>
         </div>
       </section>
 
-      <div class="home-page__section home-page__section--pink-background">
+      <div class="section section--pink-background">
         <div class="section__content">
-          <p class="accent-font">
+          <p
+            class="accent-font section__text section__text--quote section__text--centered"
+          >
             “Donec volutpat lacus consectetur ex ultrices, ut consequat ligula
             aliquet. Aliquam consequat ligula ultricies quam dapibus convallis.
             Ut aliquam urna id luctus lacinia. Nulla id metus metus. Vivamus id
@@ -386,16 +386,12 @@
         </div>
       </div>
 
-      <section
-        class="home-page__section home-page__section--without-background"
-      >
+      <section class="section section--big">
         <div class="section__content">
-          <div class="homepage__left-column">
-            <h2 class="home-page__second-heading">
-              Lorem ipsum dolor sit amet
-            </h2>
+          <div class="section__left-column">
+            <h2 class="section__heading">Lorem ipsum dolor sit amet</h2>
 
-            <p>
+            <p class="section__text">
               Donec volutpat lacus consectetur ex ultrices, ut consequat ligula
               aliquet. Aliquam consequat ligula ultricies quam dapibus
               convallis. Ut aliquam urna id luctus lacinia. Nulla id metus
@@ -403,7 +399,7 @@
               placerat.
             </p>
 
-            <p>
+            <p class="section__text">
               Duis vel metus eget ligula pellentesque dignissim. Suspendisse
               lobortis ligula sit amet hendrerit bibendum. Duis odio diam,
               posuere at mauris condimentum, finibus tempor massa. Vestibulum ac
@@ -414,20 +410,18 @@
             </p>
           </div>
 
-          <div
-            class="homepage__flower-vase-img-container homepage__right-section"
-          ></div>
+          <div class="section__right-column">
+            <div class="section__img-container"></div>
+          </div>
         </div>
       </section>
 
-      <section class="home-page__section home-page__section--flower-background">
+      <section class="section section--full-background">
         <div class="section__content">
-          <div class="homepage__right-section">
-            <h2 class="home-page__second-heading">
-              Lorem ipsum dolor sit amet
-            </h2>
+          <div class="section__right-column">
+            <h2 class="section__heading">Lorem ipsum dolor sit amet</h2>
 
-            <p>
+            <p class="section__text section__text--centered">
               Donec volutpat lacus consectetur ex ultrices, ut consequat ligula
               aliquet. Aliquam consequat ligula ultricies quam dapibus
               convallis. Ut aliquam urna id luctus lacinia. Nulla id metus
@@ -436,19 +430,15 @@
               Suspendisse lobortis ligula sit amet hendrerit bibendum.
             </p>
 
-            <a
-              href="#"
-              class="home-page__button-link home-page__button-link--ghost-button"
+            <a href="#" class="button-link button-link--ghost-button"
               >Faire une demande de devis</a
             >
           </div>
         </div>
       </section>
 
-      <section class="home-page__section home-page__section--pre-footer">
-        <h2 class="home-page__second-heading pre-footer__heading">
-          Lorem ipsum dolor sit amet
-        </h2>
+      <section class="pre-footer">
+        <h2 class="pre-footer__heading">Lorem ipsum dolor sit amet</h2>
 
         <div class="pre-footer__brand-values-container">
           <div>
@@ -785,14 +775,14 @@
       </div>
 
       <div class="footer__bottom">
-        <p>
+        <p class="footer_bottom-text">
           UIcons by
           <a class="footer__legal-link" href="https://www.flaticon.com/uicons"
             >Flaticon</a
           >
         </p>
 
-        <p>
+        <p class="footer_bottom-text">
           © Atelier Florem Ipsum - 2023 -
           <a href="#" class="footer__legal-link">Mentions légales</a> -
           <a href="#" class="footer__legal-link"

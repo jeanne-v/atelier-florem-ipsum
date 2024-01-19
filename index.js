@@ -31,7 +31,7 @@ function handleMobileMenuOverlay() {
   document
     .getElementById("mobile-menu-overlay")
     .classList.toggle("mobile-menu-overlay--open");
-  document.body.classList.toggle("open");
+  document.body.classList.toggle(".body--open");
 }
 
 function handleHomepageHeader() {

@@ -133,11 +133,11 @@ svg {
   display: flex;
 }
 
-body.open {
+.body--open {
   overflow: hidden;
 }
 
-.mobile-menu-overlay__x-icon {
+.mobile-menu-overlay__close-btn {
   margin-left: auto;
   cursor: pointer;
   padding: 0;
@@ -145,7 +145,7 @@ body.open {
   background-color: transparent;
 }
 
-.mobile-menu-overlay__x-icon img {
+.mobile-menu-overlay__close-icon {
   height: 32px;
   display: block;
 }
@@ -211,7 +211,7 @@ body.open {
   gap: 4px;
 }
 
-.footer__bottom p {
+.footer_bottom-text {
   margin: 0;
 }
 
@@ -219,31 +219,30 @@ body.open {
   color: #382d2e;
 }
 
-/* HOMEPAGE BUTTON LINKS */
+/*  BUTTON LINKS */
 
-.home-page__button-link {
+.button-link {
   display: inline-block;
   text-decoration: none;
   line-height: 1.5;
-  padding: 1em 1.5em; /* ? */
+  padding: 1em 1.5em;
 }
 
-.home-page__button-link--ghost-button {
-  margin-top: 24px;
+.button-link--ghost-button {
   color: #382d2e;
   border: 1px solid #382d2e;
 }
 
-.home-page__button-link--pink {
+.button-link--pink {
   background-color: #ffe8e8;
   color: #ce2539;
 }
 
-.home-page__button-link--pink:hover {
+.button-link--pink:hover {
   background-color: #ffffff;
 }
 
-.home-page__button-link--ghost-button:hover {
+.button-link--ghost-button:hover {
   background-color: #ffe8e8;
   border-color: #ffe8e8;
   color: #382d2e;
@@ -259,17 +258,18 @@ body.open {
   background-position: top center;
 }
 
-.hero-img-section__text {
+.hero-img-section__first-heading,
+.hero-img-section__sub-heading {
   text-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
   color: #ffffff;
 }
 
-.hero-img-section__text--first-heading {
+.hero-img-section__first-heading {
   margin: 0;
   font-size: 3rem; /* 48px */
 }
 
-.hero-img-section__text--sub-text {
+.hero-img-section__sub-heading {
   font-size: 1.25rem; /* 20px */
   line-height: 1.5rem; /* 24px */
   margin: 16px 0 32px;
@@ -296,68 +296,76 @@ main {
 
 /* HOMEPAGE SECTIONS  */
 
-.home-page__second-heading {
+.section {
+  padding: 48px 24px;
+}
+
+.section__heading {
   font-size: 2rem; /* 32px */
   text-align: center;
-  margin-top: 0;
+  margin: 0 0 16px;
 }
 
-.home-page__section:not(.home-page__section--pre-footer) h2 {
-  margin-bottom: 16px;
-}
-
-.home-page__section--without-background {
+.section--big {
   padding: 56px 24px;
 }
 
-.home-page__section--without-background p {
-  margin: 0;
-}
-
-.home-page__section--without-background p:last-of-type {
-  margin: 8px 0 32px;
-}
-
-.home-page__section--pink-background {
-  padding: 48px 24px;
+.section--pink-background {
   background-color: #ffe8e8;
   color: #ce2539;
 }
 
-.home-page__section--pink-background p {
+.section__text {
   margin: 0;
+}
+
+.section__text--centered {
   text-align: center;
+}
+
+.section__text + .section__text {
+  margin-top: 8px;
+}
+
+.section__text--quote {
   font-size: 1.25rem; /* 20px */
   line-height: 1.5rem; /* 24px */
 }
 
-.home-page__section--flower-background {
-  padding: 48px 24px 88px;
+.section__img-container {
+  background-image: url(assets/pexels-daria-shevtsova-1070860.png);
+  background-position: bottom center;
+  background-size: cover;
+  margin-top: 32px;
+  height: 184px;
+}
+
+.section--full-background {
   background-image: url(assets/AdobeStock_484420661_Preview.png);
   background-size: cover;
   background-position: 50% 85%;
 }
 
-.home-page__section--flower-background .homepage__right-section {
+.section--full-background .button-link {
+  margin: 24px 0 40px;
+}
+
+.section--full-background .section__right-column {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.home-page__section--flower-background p {
-  margin: 0;
-  text-align: center;
-}
-
 /* HOMEPAGE BRAND VALUES SECTION */
 
-.home-page__section--pre-footer {
+.pre-footer {
   margin-top: 56px;
   text-align: center;
 }
 
 .pre-footer__heading {
   margin: 0 24px 40px;
+  font-size: 2rem; /* 32px */
 }
 
 .pre-footer__brand-values-container {
@@ -385,15 +393,6 @@ main {
 
 .brand-values-container {
   width: 70vw;
-}
-
-/* HOMEPAGE FLOWER VASE IMG */
-
-.homepage__flower-vase-img-container {
-  background-image: url(assets/pexels-daria-shevtsova-1070860.png);
-  background-position: bottom center;
-  background-size: cover;
-  height: 184px;
 }
 
 /* BOUQUET CARD */
@@ -557,24 +556,23 @@ main {
     padding: 256px 48px 96px;
   }
 
-  .hero-img-section__text--first-heading {
+  .hero-img-section__first-heading {
     font-size: 4.5rem;
   }
 
-  .home-page__button-link {
+  .button-link {
     padding: 1rem 2rem;
   }
-
-  .home-page__section--pink-background {
+  .section {
     padding: 48px;
   }
 
-  .home-page__section--without-background {
+  .section--big {
     padding: 56px 48px;
   }
 
-  .home-page__section--flower-background {
-    padding: 48px 48px 80px;
+  .section--full-background .button-link {
+    margin: 24px 0 32px;
   }
 
   .pre-footer__brand-values-container {
@@ -608,7 +606,7 @@ main {
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
-  .hero-img-section__text--sub-text {
+  .hero-img-section__sub-heading {
     margin: 16px 0 48px;
   }
 }
@@ -619,51 +617,52 @@ main {
     height: 100vh;
   }
 
-  .hero-img-section__text--first-heading {
+  .hero-img-section__first-heading {
     padding-top: 44.444444vh;
   }
 
-  .home-page__section--without-background .section__content {
+  .section--big .section__content {
     display: flex;
     gap: 96px;
   }
 
-  .home-page__second-heading:not(.pre-footer__heading) {
+  .section__left-column .section__heading {
     text-align: left;
   }
 
-  .home-page__section--without-background p:last-of-type {
-    margin-bottom: 0;
-  }
-
-  .homepage__left-column {
+  .section__left-column {
     margin: 16px 0;
-  }
-
-  .homepage__flower-vase-img-container {
-    height: auto;
-  }
-
-  .homepage__right-section {
-    width: 50%;
-  }
-
-  .homepage__left-column {
     width: calc(50% - 96px);
   }
 
-  .home-page__section--flower-background {
-    background-image: url(assets/AdobeStock_484420661_Preview2.png);
-    background-position: top;
+  .section__right-column {
+    width: 50%;
+    height: auto;
   }
 
-  .home-page__section--flower-background .section__content {
+  .section__img-container {
+    height: 100%;
+    margin: 0;
+  }
+
+  .section--full-background {
+    background-image: url(assets/AdobeStock_484420661_Preview2.png);
+    background-position: top;
+    text-align: center;
+  }
+
+  .section--full-background .section__content {
     display: flex;
     justify-content: flex-end;
   }
 
-  .home-page__button-link--ghost-button {
+  .section--full-background .button-link--ghost-button {
     padding: 12px 24px;
+    margin: 24px 0 0;
+  }
+
+  .pre-footer__heading {
+    margin: 0 72px 48px;
   }
 
   .pre-footer__sub-heading {
@@ -728,44 +727,37 @@ main {
     padding: 16px 72px;
   }
 
-  .hero-img-section__text--first-heading {
+  .hero-img-section__first-heading {
     font-size: 5.5rem;
   }
 
-  .hero-img-section__text--sub-text {
+  .hero-img-section__sub-heading {
     margin: 16px 0 48px;
     font-size: 1.75rem; /* 28px */
     line-height: 2rem; /* 32px */
   }
 
-  .home-page__button-link--pink {
+  .button-link--pink {
     padding: 1rem 2rem;
   }
 
-  .home-page__section--pink-background {
+  .section {
     padding: 48px 72px;
   }
 
-  .home-page__section--pink-background p {
+  .section__text--quote {
     font-size: 1.75rem; /* 28px */
     line-height: 2rem; /* 32px */
   }
 
-  .home-page__section--without-background {
+  .section--big {
     padding: 56px 72px;
   }
 
-  .home-page__section--flower-background {
-    padding: 48px 72px 48px;
-  }
-
-  .home-page__second-heading {
+  .section__heading,
+  .pre-footer__heading {
     font-size: 2.5rem; /* 40px */
     line-height: 1;
-  }
-
-  .pre-footer__heading {
-    margin: 0 72px 48px;
   }
 
   .secondary-page__first-heading {
@@ -809,17 +801,17 @@ main {
     margin-bottom: 208px;
   }
 
-  .hero-img-section__text--first-heading {
+  .hero-img-section__first-heading {
     font-size: 9rem; /* 144px */
   }
 
-  .hero-img-section__text--sub-text {
+  .hero-img-section__sub-heading {
     margin: 16px 0 56px;
     font-size: 2.75rem; /* 44px */
     line-height: 3rem; /* 48px */
   }
 
-  .home-page__button-link--pink {
+  .button-link--pink {
     padding: 1.5rem 2.5rem; /* 24px 40px */
     font-size: 1.5rem; /* 24px */
     line-height: 2rem; /* 32px */
@@ -830,34 +822,30 @@ main {
     margin: 0 auto;
   }
 
-  .home-page__section--pink-background {
+  .section {
     padding: 56px 72px;
   }
 
-  .home-page__section--pink-background p {
+  .section__text--quote {
     font-size: 2.25rem; /* 36px */
     line-height: 2.5rem; /* 40px */
   }
 
-  .home-page__section--without-background {
+  .section--big {
     padding: 64px 72px;
   }
 
-  .home-page__section--flower-background {
-    padding: 56px 72px;
+  .pre-footer {
+    margin-top: 64px;
   }
 
-  .home-page__second-heading {
+  .section__heading,
+  .pre-footer__heading {
     font-size: 3rem; /* 40px */
-    line-height: 1;
   }
 
   .pre-footer__brand-values-container {
     max-width: 996.8px;
-  }
-
-  .pre-footer__heading {
-    margin: 0 72px 48px;
   }
 
   .main__content {
