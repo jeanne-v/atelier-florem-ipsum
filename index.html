@@ -16,7 +16,7 @@
   <body data-page="homepage">
     <header class="header header--transparent" id="header">
       <div class="header__content">
-        <a href="index.html">
+        <a href="index.html" aria-label="page d'accueil florem ipsum">
           <svg
             class="header__logo"
             version="1.1"
@@ -292,7 +292,11 @@
           </svg>
         </a>
 
-        <button class="header__hamburger-menu" id="hamburger-btn">
+        <button
+          class="header__hamburger-menu"
+          id="hamburger-btn"
+          aria-label="ouverture menu"
+        >
           <svg
             width="36"
             height="24"
@@ -337,25 +341,27 @@
         />
       </button>
 
-      <ul class="mobile-menu-overlay__list">
-        <li class="accent-font mobile-menu-overlay__item">
-          <a
-            class="mobile-menu-overlay__link mobile-menu-overlay__link--active"
-            href="index.html"
-            >Accueil</a
-          >
-        </li>
+      <nav>
+        <ul class="mobile-menu-overlay__list">
+          <li class="accent-font mobile-menu-overlay__item">
+            <a
+              class="mobile-menu-overlay__link mobile-menu-overlay__link--active"
+              href="index.html"
+              >Accueil</a
+            >
+          </li>
 
-        <li class="accent-font mobile-menu-overlay__item">
-          <a class="mobile-menu-overlay__link" href="nos-realisations.html"
-            >Nos réalisations</a
-          >
-        </li>
+          <li class="accent-font mobile-menu-overlay__item">
+            <a class="mobile-menu-overlay__link" href="nos-realisations.html"
+              >Nos réalisations</a
+            >
+          </li>
 
-        <li class="accent-font mobile-menu-overlay__item">
-          <a class="mobile-menu-overlay__link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+          <li class="accent-font mobile-menu-overlay__item">
+            <a class="mobile-menu-overlay__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <main>
@@ -367,7 +373,7 @@
             Création de bouquets artisanaux
           </p>
 
-          <a href="#" class="button-link button-link--pink"
+          <a href="nos-realisations.html" class="button-link button-link--pink"
             >Découvrir nos réalisations
           </a>
         </div>
@@ -430,7 +436,7 @@
               Suspendisse lobortis ligula sit amet hendrerit bibendum.
             </p>
 
-            <a href="#" class="button-link button-link--ghost-button"
+            <a href="contact.html" class="button-link button-link--ghost-button"
               >Faire une demande de devis</a
             >
           </div>

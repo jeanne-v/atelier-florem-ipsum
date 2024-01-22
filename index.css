@@ -159,6 +159,7 @@ svg {
   list-style-type: none;
   font-size: 2rem; /* 32px */
   margin-bottom: 56px;
+  line-height: 1;
 }
 
 .mobile-menu-overlay__link {

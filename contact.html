@@ -16,7 +16,7 @@
   <body>
     <header class="header" id="header">
       <div class="header__content">
-        <a href="index.html">
+        <a href="index.html" aria-label="page d'accueil florem ipsum">
           <svg
             class="header__logo"
             version="1.1"
@@ -292,7 +292,11 @@
           </svg>
         </a>
 
-        <button class="header__hamburger-menu" id="hamburger-btn">
+        <button
+          class="header__hamburger-menu"
+          id="hamburger-btn"
+          aria-label="ouverture menu"
+        >
           <svg
             width="36"
             height="24"
@@ -337,25 +341,27 @@
         />
       </button>
 
-      <ul class="mobile-menu-overlay__list">
-        <li class="accent-font mobile-menu-overlay__item">
-          <a class="mobile-menu-overlay__link" href="index.html">Accueil</a>
-        </li>
+      <nav>
+        <ul class="mobile-menu-overlay__list">
+          <li class="accent-font mobile-menu-overlay__item">
+            <a class="mobile-menu-overlay__link" href="index.html">Accueil</a>
+          </li>
 
-        <li class="accent-font mobile-menu-overlay__item">
-          <a class="mobile-menu-overlay__link" href="nos-realisations.html"
-            >Nos réalisations</a
-          >
-        </li>
+          <li class="accent-font mobile-menu-overlay__item">
+            <a class="mobile-menu-overlay__link" href="nos-realisations.html"
+              >Nos réalisations</a
+            >
+          </li>
 
-        <li class="accent-font mobile-menu-overlay__item">
-          <a
-            class="mobile-menu-overlay__link mobile-menu-overlay__link--active"
-            href="contact.html"
-            >Contact</a
-          >
-        </li>
-      </ul>
+          <li class="accent-font mobile-menu-overlay__item">
+            <a
+              class="mobile-menu-overlay__link mobile-menu-overlay__link--active"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <main class="secondary-page__main secondary-page__main--contact">
