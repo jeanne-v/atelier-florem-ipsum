@@ -402,7 +402,7 @@ main {
   margin-top: 32px;
   display: grid;
   gap: 32px;
-  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
 }
 
 .bouquet-card {
