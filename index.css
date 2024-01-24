@@ -334,11 +334,10 @@ main {
 }
 
 .section__img-container {
-  background-image: url(assets/pexels-daria-shevtsova-1070860.png);
+  background-image: url(assets/flower-vase-very-small.jpg);
   background-position: bottom center;
   background-size: cover;
   margin-top: 32px;
-  height: 184px;
 }
 
 .section--full-background {
@@ -530,6 +529,12 @@ main {
   }
 }
 
+@media (max-width: 1023.5px) {
+  .section__img-container {
+    aspect-ratio: 2/1;
+  }
+}
+
 @media (min-width: 768px) {
   .header__hamburger-menu {
     display: none;
@@ -566,6 +571,10 @@ main {
   }
   .section {
     padding: 48px;
+  }
+
+  .section__img-container {
+    background-image: url(assets/flower-vase-small.jpg);
   }
 
   .section--big {
@@ -760,6 +769,11 @@ main {
     line-height: 2rem; /* 32px */
   }
 
+  .section__img-container {
+    background-image: url(assets/flower-vase-medium.jpg);
+    background-position: 50% 75%;
+  }
+
   .section--big {
     padding: 56px 72px;
   }
@@ -843,6 +857,10 @@ main {
 
   .section--big {
     padding: 64px 72px;
+  }
+
+  .section__img-container {
+    background-image: url(assets/flower-vase-large.jpg);
   }
 
   .pre-footer {
