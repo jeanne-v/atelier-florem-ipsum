@@ -254,7 +254,7 @@ svg {
 .hero-img-section {
   padding: 152px 24px 40px;
   text-align: center;
-  background-image: url(assets/background-temporary.png);
+  background-image: url(assets/hero-image-small.jpg);
   background-size: cover;
   background-position: top center;
 }
@@ -342,7 +342,7 @@ main {
 }
 
 .section--full-background {
-  background-image: url(assets/AdobeStock_484420661_Preview.png);
+  background-image: url(assets/flower-background.jpg);
   background-size: cover;
   background-position: 50% 85%;
 }
@@ -607,6 +607,10 @@ main {
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
+  .hero-img-section {
+    background-image: url(assets/hero-image-medium.jpg);
+  }
+
   .hero-img-section__sub-heading {
     margin: 16px 0 48px;
   }
@@ -616,6 +620,7 @@ main {
   .hero-img-section {
     padding: 0 72px 0;
     height: 100vh;
+    background-position: center;
   }
 
   .hero-img-section__first-heading {
@@ -647,7 +652,7 @@ main {
   }
 
   .section--full-background {
-    background-image: url(assets/AdobeStock_484420661_Preview2.png);
+    background-image: url(assets/flower-background-large.jpg);
     background-position: top;
     text-align: center;
   }
@@ -700,8 +705,12 @@ main {
     margin: 0 auto;
   }
 
+  .bouquet-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  }
+
   .bouquet-card__text {
-    margin: 1.5rem 0; /* 24px 0*/
+    margin: 24px 16px;
     line-height: 2rem; /* 32px */
   }
 
@@ -862,7 +871,10 @@ main {
   .bouquet-cards-container {
     margin-top: 56px;
     gap: 48px;
-    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  }
+
+  .bouquet-card__text {
+    font-size: 1.75rem; /* 28px */
   }
 
   .contact-form {
@@ -875,5 +887,17 @@ main {
 
   .contact-page__or {
     margin: 16px 40px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+  .hero-img-section {
+    background-image: url(assets/hero-image-large.jpg);
+  }
+}
+
+@media (min-width: 1921px) {
+  .hero-img-section {
+    background-image: url(assets/hero-image-very-large.jpg);
   }
 }
