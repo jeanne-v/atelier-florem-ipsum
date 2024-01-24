@@ -10,7 +10,7 @@ function renderBouquets() {
   const bouquetsHTML = cardsData
     .map((card) => {
       return `
-        <a href="assets/${card.imgUrl}" class="bouquet-card">
+        <a href="assets/${card.largeImgUrl}" class="bouquet-card">
             <div class="bouquet-card__img-container" style="background-image: url(assets/${card.imgUrl})"></div>
             <p class="bouquet-card__text">Lorem ipsum dolor sit amet</p>
         </a>`;

@@ -1,35 +1,35 @@
 const cardsData = [
   {
     imgUrl: "florem-ipsum-bouquet-1.jpg",
-    id: "",
+    largeImgUrl: "florem-ipsum-bouquet-1-very-large.jpg",
   },
   {
     imgUrl: "florem-ipsum-bouquet-2.jpg",
-    id: "",
+    largeImgUrl: "florem-ipsum-bouquet-2-very-large.jpg",
   },
   {
     imgUrl: "florem-ipsum-bouquet-3.jpg",
-    id: "",
+    largeImgUrl: "florem-ipsum-bouquet-3-very-large.jpg",
   },
   {
     imgUrl: "florem-ipsum-bouquet-4.jpg",
-    id: "",
+    largeImgUrl: "florem-ipsum-bouquet-4-very-large.jpg",
   },
   {
     imgUrl: "florem-ipsum-bouquet-5.jpg",
-    id: "",
+    largeImgUrl: "florem-ipsum-bouquet-5-very-large.jpg",
   },
   {
     imgUrl: "florem-ipsum-bouquet-6.jpg",
-    id: "",
+    largeImgUrl: "florem-ipsum-bouquet-6-very-large.jpg",
   },
   {
     imgUrl: "florem-ipsum-bouquet-7.jpg",
-    id: "",
+    largeImgUrl: "florem-ipsum-bouquet-7-very-large.jpg",
   },
   {
     imgUrl: "florem-ipsum-bouquet-8.jpg",
-    id: "",
+    largeImgUrl: "florem-ipsum-bouquet-8-very-large.jpg",
   },
 ];
 
