@@ -84,9 +84,17 @@ svg {
   text-transform: uppercase;
 }
 
+.header__link:hover {
+  color: #ce2539;
+}
+
 .header--transparent .header__link {
   color: #ffffff;
   text-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header--transparent .header__link:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .header__link:not(.header__link--current) {
@@ -220,6 +228,10 @@ svg {
   color: #382d2e;
 }
 
+.footer__legal-link:hover {
+  color: #ce2539;
+}
+
 /*  BUTTON LINKS */
 
 .button-link {
@@ -244,9 +256,8 @@ svg {
 }
 
 .button-link--ghost-button:hover {
-  background-color: #ffe8e8;
-  border-color: #ffe8e8;
-  color: #382d2e;
+  border-color: #ce2539;
+  color: #ce2539;
 }
 
 /* HOMEPAGE HERO IMG SECTION */
