@@ -482,6 +482,20 @@ main {
   resize: vertical;
 }
 
+.contact-form__field--error {
+  border-color: #ce0000;
+}
+
+.contact-form__error-message {
+  color: #ce0000;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1rem; /* 16px */
+}
+
+.contact-form__error {
+  margin-top: 8px;
+}
+
 .contact-form__btn {
   border: none;
   background-color: #ffe8e8;
@@ -497,6 +511,11 @@ main {
 
 .contact-form__btn:hover {
   color: #ce2539;
+}
+
+.contact-form__success-message {
+  margin: 0 auto;
+  width: fit-content;
 }
 
 /* MEDIA QUERIES */
