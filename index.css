@@ -527,6 +527,7 @@ main {
 .contact-form__success-message {
   margin: 0 auto;
   width: fit-content;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
