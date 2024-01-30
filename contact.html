@@ -374,7 +374,7 @@
 
       <p class="contact-page__or">ou</p>
 
-      <form class="contact-form">
+      <form class="contact-form" id="form" novalidate>
         <div class="contact-form__main-content">
           <div>
             <label for="user-last-name" class="contact-form__label accent-font"
@@ -390,6 +390,7 @@
               class="contact-form__field contact-form__field--input"
               required
             />
+            <div></div>
           </div>
 
           <div>
@@ -406,6 +407,7 @@
               class="contact-form__field contact-form__field--input"
               required
             />
+            <div></div>
           </div>
 
           <div>
@@ -423,6 +425,7 @@
               required
               placeholder="ex : exemple@email.com"
             />
+            <div></div>
           </div>
 
           <div>
@@ -438,6 +441,7 @@
               class="contact-form__field contact-form__field--input"
               placeholder="ex : 0123456789"
             />
+            <div></div>
           </div>
 
           <div class="contact-form__message-section">
@@ -453,10 +457,19 @@
               class="contact-form__field contact-form__field--text-area"
               required
             ></textarea>
+            <div></div>
           </div>
         </div>
 
-        <button type="submit" class="contact-form__btn">Envoyer</button>
+        <div>
+          <button
+            type="submit"
+            class="contact-form__btn"
+            id="contact-submit-btn"
+          >
+            Envoyer
+          </button>
+        </div>
       </form>
     </main>
 
@@ -776,5 +789,6 @@
     </footer>
 
     <script src="index.js" type="module"></script>
+    <script src="contact-form.js"></script>
   </body>
 </html>
