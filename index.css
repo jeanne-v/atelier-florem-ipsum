@@ -10,11 +10,6 @@ body {
   line-height: 1.5;
 }
 
-/* to remove !!! */
-::-webkit-scrollbar {
-  display: none;
-}
-
 @font-face {
   font-family: "Soligant";
   src: url("assets/Soligant.ttf");
