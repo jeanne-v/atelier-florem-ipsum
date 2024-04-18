@@ -2,11 +2,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-bg-color: #fcf7f8;
+  --sec-bg-color: #ffe8e8;
+  --accent-color: #ce2539;
+
+  --main-text-color: #382d2e;
+  --white: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  background-color: #fcf7f8;
-  color: #382d2e;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   line-height: 1.5;
 }
 
@@ -38,7 +47,7 @@ svg {
 /* HEADER */
 
 .header {
-  background-color: #ffe8e8;
+  background-color: var(--sec-bg-color);
   box-shadow: 0 4px 5px rgba(153, 100, 100, 0.25);
   padding: 24px;
   position: sticky;
@@ -56,7 +65,7 @@ svg {
 }
 
 .header__logo path {
-  fill: #ce2539;
+  fill: var(--accent-color);
 }
 
 .header__nav {
@@ -75,16 +84,16 @@ svg {
 }
 
 .header__link {
-  color: #382d2e;
+  color: var(--main-text-color);
   text-transform: uppercase;
 }
 
 .header__link:hover {
-  color: #ce2539;
+  color: var(--accent-color);
 }
 
 .header--transparent .header__link {
-  color: #ffffff;
+  color: var(--white);
   text-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -111,11 +120,11 @@ svg {
 }
 
 .header--transparent .header__logo path {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 .header--transparent .header__hamburger-menu line {
-  stroke: #ffffff;
+  stroke: var(--white);
 }
 
 /* MOBILE OVERLAY MENU */
@@ -127,7 +136,7 @@ svg {
   width: 100%;
   height: 100vh;
   padding: 24px;
-  background-color: #fcf7f8;
+  background-color: var(--main-bg-color);
   display: none;
   flex-direction: column;
 }
@@ -166,7 +175,7 @@ svg {
 }
 
 .mobile-menu-overlay__link {
-  color: #382d2e;
+  color: var(--main-text-color);
 }
 
 .mobile-menu-overlay__link:not(.mobile-menu-overlay__link--active) {
@@ -176,7 +185,7 @@ svg {
 /* FOOTER */
 
 .footer {
-  background-color: #ffe8e8;
+  background-color: var(--sec-bg-color);
   padding: 40px 24px 24px;
   text-align: center;
 }
@@ -220,11 +229,11 @@ svg {
 }
 
 .footer__legal-link {
-  color: #382d2e;
+  color: var(--main-text-color);
 }
 
 .footer__legal-link:hover {
-  color: #ce2539;
+  color: var(--accent-color);
 }
 
 /*  BUTTON LINKS */
@@ -237,22 +246,22 @@ svg {
 }
 
 .button-link--ghost-button {
-  color: #382d2e;
-  border: 1px solid #382d2e;
+  color: var(--main-text-color);
+  border: 1px solid var(--main-text-color);
 }
 
 .button-link--pink {
-  background-color: #ffe8e8;
-  color: #ce2539;
+  background-color: var(--sec-bg-color);
+  color: var(--accent-color);
 }
 
 .button-link--pink:hover {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .button-link--ghost-button:hover {
-  border-color: #ce2539;
-  color: #ce2539;
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* HOMEPAGE HERO IMG SECTION */
@@ -268,7 +277,7 @@ svg {
 .hero-img-section__first-heading,
 .hero-img-section__sub-heading {
   text-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
+  color: var(--white);
 }
 
 .hero-img-section__first-heading {
@@ -318,8 +327,8 @@ main {
 }
 
 .section--pink-background {
-  background-color: #ffe8e8;
-  color: #ce2539;
+  background-color: var(--sec-bg-color);
+  color: var(--accent-color);
 }
 
 .section__text {
@@ -412,12 +421,12 @@ main {
 
 .bouquet-card {
   display: block;
-  background-color: #ffffff;
+  background-color: var(--white);
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
   text-decoration: none;
-  color: #382d2e;
+  color: var(--main-text-color);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -447,7 +456,7 @@ main {
 }
 
 .contact-form {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 32px;
   border-radius: 5px;
 }
@@ -464,7 +473,7 @@ main {
 }
 
 .contact-form__required-star {
-  color: #ce2539;
+  color: var(--accent-color);
 }
 
 .contact-form__field {
@@ -476,7 +485,7 @@ main {
   border: 1px solid #808080;
   font-size: 16px;
   font-family: "Lato", sans-serif;
-  color: #382d2e;
+  color: var(--main-text-color);
 }
 
 .contact-form__field--input {
@@ -504,8 +513,8 @@ main {
 
 .contact-form__btn {
   border: none;
-  background-color: #ffe8e8;
-  color: #382d2e;
+  background-color: var(--sec-bg-color);
+  color: var(--main-text-color);
   font-size: 16px;
   font-family: "Lato", sans-serif;
   line-height: 1.5;
@@ -516,7 +525,7 @@ main {
 }
 
 .contact-form__btn:hover {
-  color: #ce2539;
+  color: var(--accent-color);
 }
 
 .contact-form__success-message {
